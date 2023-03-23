@@ -1,0 +1,1251 @@
+#myBtn {
+    display: none;
+}
+
+.modal-content2 {
+    width: 40%;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border: 0.1rem solid #065749;
+
+    @include breakpoint($lg-bp) {
+        width: 60%;
+    }
+}
+
+.okBtn {
+    border: none;
+    background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
+    font-family: 'Neo Sans Pro Cyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #606060;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.declineBtn {
+    border: none;
+    font-family: 'Neo Sans Pro Cyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #606060;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.cookieText {
+    font-family: 'Neo Sans Pro Cyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #606060;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 111111;
+
+    left: 0;
+    top: 80%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    @include breakpoint($lg-bp) {
+        top: 70%;
+    }
+
+    @include breakpoint($sm-bp) {
+        top: 40%;
+    }
+    
+
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.upBtn {
+    font-family: NeoSansCyrRegular;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+    letter-spacing: .03em;
+    color: #fff;
+    text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+    z-index: 4;
+    border-radius: 50%;
+    background-color: #00372E;
+    width: 10rem;
+    height: 10rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    animation: pulse 2.5s linear infinite;
+
+    @include breakpoint($srm-bp) {
+        display: flex;
+    }
+}
+
+.header {
+    margin: 9;
+    .logo {
+
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+.upBtn:hover {
+    color: #D9BE8C;
+    transition: linear 0.2s;
+}
+
+.main {
+    font-family: "NeoSansCyrLight";
+
+    .firstSliderBlock {
+        
+        
+        margin-top: 0.3rem;
+        margin-top: 10rem;
+
+        background: #ffe4bf;
+
+        @include breakpoint($srm-bp) {
+            margin-top: 0rem;
+        }
+
+        .mySwiper {
+
+            @include breakpoint($sm-bp) {
+                .swiper-button-next, .swiper-button-prev {
+                    display: none;
+                }
+            }
+
+
+            .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+                color: #8b6f4b;
+            }
+
+            .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+                color: #8b6f4b;
+            }
+
+            .swiper-button-next {
+                right: 5%;
+            }
+
+            .swiper-button-prev {
+                left: 5%;
+            }
+
+            .swiper-pagination-bullet-active {
+                background: #8b6f4b;
+            }
+
+            .swiper-slide {
+
+                .imgContainer {
+                    img {
+                        width: 100%;
+                    }
+
+                    
+                }
+                
+            }
+
+            @include breakpoint($sm-bp) {
+                .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+                    bottom: 0.3rem;
+                }
+            }
+
+            
+        }
+    }
+
+    .statBlock {
+        display: flex;
+        padding-left: 18rem;
+        padding-right: 18rem;
+        justify-content: center;
+        padding-top: 2.9rem;
+        padding-bottom: 3.9rem;
+        width: 100%;
+        border-bottom: 0.2rem solid #043930;
+        box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+        background: url(../images/main/bg1elem.png) bottom left no-repeat, url(../images/main/bg2elem.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+
+        @include breakpoint($hb-bp) {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+
+        @include breakpoint($jb-bp) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            gap: 1rem;
+        }
+
+        @include breakpoint($sm-bp) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            gap: 0.8rem;
+        }
+
+        @include breakpoint($lb-bp) {
+            flex-direction: column;
+        }
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            width: 24%;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            border-left: 0.1rem solid #008B73;
+
+            
+            @include breakpoint($sm-bp) {
+                gap: 0.5rem;
+            }
+
+            @include breakpoint($jb-bp) {
+                font-size: 1rem;
+                font-size: 1rem;
+                gap: 0.5rem;
+            }
+
+            @include breakpoint($lb-bp) {
+                width: 100%;
+            }
+
+            .title {
+                font-family: "NeoSansCyrRegular";
+                font-size: 4rem;
+                line-height: 4.8rem;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+                text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+
+                @include breakpoint($xl-bp) {
+                    font-size: 2.6rem;
+                }
+
+                @include breakpoint($jb-bp) {
+                    font-size: 2.4rem;
+                    line-height: 100%;
+                }
+
+                @include breakpoint($sm-bp) {
+                    line-height: 100%;
+                }
+            }
+
+            .subtitle {
+                font-size: 2rem;
+                line-height: 2.2rem;
+                text-align: center;
+                color: #D9BE8C;
+                text-align: center;
+                text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+                font-family: "NeoSansCyrRegular";
+
+                @include breakpoint($xl-bp) {
+                    font-size: 1.8rem;
+                }
+
+                @include breakpoint($jb-bp) {
+                    line-height: 100%;
+                }
+
+                @include breakpoint($sm-bp) {
+                    line-height: 100%;
+                }
+            }
+        }
+
+        div:last-child {
+            border-right: 0.1rem solid #008B73;
+        }
+    }
+
+    .secondSliderBlock {
+        padding-bottom: 7.6rem;
+        background: url(../images/main/backgroundElement3.png) left bottom no-repeat, url(../images/main/backgroundElem4.png) right top no-repeat;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        @include breakpoint($sm-bp) {
+            padding-bottom: 3rem;
+        }
+
+        .arrowLeft {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            cursor: pointer;
+        }
+
+        .arrowRight {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            cursor: pointer;
+        }
+
+        .title {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #065749;
+            padding-top: 2rem;
+
+            @include breakpoint($jb-bp) {
+                font-size: 2rem;
+            } 
+
+            @include breakpoint($sm-bp) {
+                line-height: 130%;
+            }
+        }
+
+        @include breakpoint($sm-bp) {
+            .arrowLeft, .arrowRight {
+                display: none;
+            }
+        }
+
+        
+
+        .productsSlider {
+            margin-top: 7.5rem;
+            margin-left: 18.2rem;
+            margin-right: 18.2rem;
+
+            img {
+                width: 35.2rem;
+            }
+
+
+            @include breakpoint($cos_bp) {
+                margin-left: 10rem;
+                margin-right: 10rem;
+            }
+
+            @include breakpoint($mb-bp) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+
+            
+
+            .swiper-pagination-bullet-active {
+                background: #8b6f4b;
+            }
+
+
+                .swiper-pagination2 {
+                    display: flex;
+                    justify-content: center;
+                }
+            
+            .swiper-slide {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-decoration: none;
+
+                cursor: pointer;
+                
+
+                &:hover {
+                    
+                    img {
+                        transform: scale(1.05);
+                        transition: all 0.3s;
+                    }
+                }
+
+                p {
+                    font-family: "NeoSansCyrRegular";
+                    font-size: 2rem;
+                    line-height: 4.4rem;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: #606060;
+
+                    @include breakpoint($jb-bp) {
+                        font-size: 1.8rem;
+                    } 
+                }
+                
+            }
+        }
+    }
+
+    .statBlockSecond {
+        padding-left: 19rem;
+        padding-right: 22.9rem;
+        width: 100%;
+        border-bottom: 0.2rem solid #043930;
+        box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+        background: url(../images/main/bg3elem.png) bottom left no-repeat, url(../images/main/bg4elem.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+        padding-top: 2rem;
+        padding-bottom: 1.6rem;
+
+              
+
+        @include breakpoint($hb-bp) {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+
+        @include breakpoint($jb-bp) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        @include breakpoint($sm-bp) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+         
+
+        .title {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.2rem;
+            line-height: 3.5rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+
+            @include breakpoint($jb-bp) {
+                font-size: 1.8rem;
+            } 
+
+            @include breakpoint($sm-bp) {
+                line-height: 150%;
+            }
+        }
+    }
+
+
+    .servicesBlock {
+        background: url(../images/main/backgroundElement3.png) left bottom no-repeat, url(../images/main/backgroundElem4.png) right top no-repeat;
+        padding-bottom: 5rem;
+
+        @include breakpoint($sm-bp) {
+            padding-bottom: 2rem;
+        }
+
+        .mainTitle {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #065749;
+            margin-bottom: 5rem;
+            padding-top: 2.5rem;
+
+            @include breakpoint($jb-bp) {
+                font-size: 2rem;
+            } 
+
+            @include breakpoint($sm-bp) {
+                line-height: 150%;
+            }
+        }
+
+        .contentBlock {
+            display: flex;
+            padding-left: 14.6rem;
+            padding-right: 14.6rem;
+            gap: 3rem;
+
+            div {
+                
+
+                img {
+                    width: 32rem;
+                    border-radius: 2rem;
+                }
+
+                div:hover {
+                    
+                    img {
+                        cursor: pointer;
+                        scale: 1.1;
+                        transition: all 0.3s linear;
+                    }
+                }
+            }
+
+            @include breakpoint($hb-bp) {
+                padding-left: 8rem;
+                padding-right: 8rem;
+            }
+
+            @include breakpoint($cos_bp) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+
+            @include breakpoint($jb-bp) {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+
+            @include breakpoint($sm-bp) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .textContainer {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                font-family: "NeoSansCyrRegular";
+            }
+
+
+            
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                div {
+                    
+
+                    img {
+                        @include breakpoint($lg-bp) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+                .title {
+                    font-family: "NeoSansCyrMedium";
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    text-align: center;
+                    color: #008B73;
+                    margin-top: 5.3rem;
+
+                    @include breakpoint($lg-bp) {
+                        margin-top: 0rem;
+                    }
+
+                    @include breakpoint($sm-bp) {
+                        line-height: 100%;
+                    }
+                }
+
+                .subtitle {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    text-align: center;
+                    color: #606060;
+                    margin-top: 0.8rem;
+                    font-family: "NeoSansCyrRegular";
+                    @include breakpoint($sm-bp) {
+                        line-height: 120%;
+                    }
+                }
+            }
+
+            .secContent {
+                width: 63%;
+            }
+        }
+    }
+
+    .formContainer {
+        border-bottom: 0.2rem solid #043930;
+        box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+        background: url(../images/main/bg5elem.png) bottom left no-repeat, url(../images/main/bg6elem.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+        padding-top: 0.8rem;
+        padding-bottom: 2.2rem;
+        
+
+        .title {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+
+            @include breakpoint($jb-bp) {
+                font-size: 2rem;
+            } 
+
+            @include breakpoint($sm-bp) {
+                line-height: 150%;
+            }
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            text-align: center;
+            color: #FFFFFF;
+            font-family: "NeoSansCyrRegular";
+
+            @include breakpoint($jb-bp) {
+                font-size: 1.6rem;
+            } 
+
+            @include breakpoint($sm-bp) {
+                line-height: 140%;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2.1rem;
+            
+
+            @include breakpoint($xl-bp) {
+                padding-left: 8rem;
+                padding-right: 8rem;
+            }
+
+            @include breakpoint($jb-bp) {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+
+            @include breakpoint($sm-bp) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1.8rem;
+                flex-wrap: wrap;
+                padding-left: 14.6rem;
+                padding-right: 14.6rem;
+
+                @include breakpoint($xl-bp) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                @include breakpoint($cos_bp) {
+                    padding-left: 8rem;
+                    padding-right: 8rem;
+                }
+
+                input {
+                    font-family: "NeoSansCyrRegular";
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                    border: 0.1rem solid #8b6f4b;
+                    background: #065749;
+                    width: 23%;
+                    padding-top: 1.6rem;
+                    padding-bottom: 1.4rem;
+                    padding-left: 1.4rem;
+                    outline-color: #8b6f4b;
+                    outline-width: 0.3rem;
+
+                    @include breakpoint($hb-bp) {
+                        width: 27%;
+                    }
+
+                    @include breakpoint($cos_bp) {
+                        width: 22%;
+                    }
+
+                    @include breakpoint($xl-bp) {
+                        width: 100%;
+                    }
+
+                    
+                }
+    
+                input::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.7); }
+                input::-moz-placeholder { color: rgba(255, 255, 255, 0.7); }
+            }
+
+            .formButton {
+                display: flex;
+                justify-content: center;
+            }
+
+            button {
+                font-family: "NeoSansCyrRegular";
+                width: max-content;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                text-align: center;
+                color: #00372E;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.1rem;
+                filter: drop-shadow(0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4));
+                background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
+                border: none;
+                padding-left: 5.1rem;
+                padding-top: 0.4rem;
+                padding-bottom: 0.2rem;
+                padding-right: 3.7rem;
+
+                svg {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    fill: transparent;
+                }
+
+                
+            }
+
+            button:hover {
+                transition: linear 0.3s;
+                filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
+            }
+
+            button:active {
+                filter: none;
+            }
+
+            .licence {
+                font-weight: 400;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "NeoSansCyrRegular";
+
+                @include breakpoint($sm-bp) {
+                    flex-direction: column;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding-left: 0.3rem;
+                }
+            }
+            
+        }
+    }
+
+    .geography {
+        background: url(../images/main/backgroundElement3.png) left bottom no-repeat, url(../images/main/backgroundElem4.png) right top no-repeat;
+        padding-top: 2.6rem;
+        padding-bottom: 2.8rem;
+
+        
+
+
+        .title {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #065749;
+
+            @include breakpoint($jb-bp) {
+                font-size: 2rem;
+            } 
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            text-align: center;
+            color: #606060;
+            margin-bottom: 4rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-family: "NeoSansCyrRegular";
+
+            @include breakpoint($jb-bp) {
+                font-size: 1.6rem;
+            } 
+        }
+
+        .imgContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 3.4rem;
+            margin-bottom: 3.4rem;
+            position: relative;
+            width: min-content;
+            margin: 0 auto;
+
+            .showCountry {
+                position: absolute;
+                line-height: 5rem;
+                transition: all 0.3s;
+                color: #00372E;
+                font-family: "NeoSansCyrMedium";
+                font-size: 5rem;
+                width: min-content;
+                top: 29%;
+                left: -22%;
+
+                @media (max-width: 1650px) {
+                    left: 77%;
+                    top: 49%;
+                }
+
+
+                @media (max-width: 1400px) {
+                    left: 77%;
+                    top: 49%;
+                }
+
+                @media (max-width: 1024px) {
+                    font-size: 4rem;
+                    width: 20rem;
+                }
+
+                @media (max-width: 850px) {
+                    display: none;
+                }
+            }
+
+            .Aravia {
+                position: absolute;
+                left: 25.3%;
+                top: 41.74%;
+                width: 10.3%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+                
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Russia {
+                position: absolute;
+                top: 4.1%;
+                left: 22%;
+                width: 77.4%;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Belarus {
+                position: absolute;
+                left: 19.8%;
+                top: 21.9%;
+                width: 4.8%;
+                
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Franch {
+                position: absolute;
+                left: 6.3%;
+                top: 26%;
+                width: 6.4%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Germany {
+                position: absolute;
+                top: 22.7%;
+                left: 11.6%;
+                width: 4.6%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Chezh {
+                position: absolute;
+                top: 26%;
+                left: 14.6%;
+                width: 3.4%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Italy {
+                position: absolute;
+                top: 29.4%;
+                left: 11.8%;
+                width: 6%;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Armenya {
+                position: absolute;
+                top: 33.6%;
+                left: 30.27%;
+                width: 2.9%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Gruzia {
+                position: absolute;
+                top: 32%;
+                left: 27.75%;
+                width: 3.6%;
+            
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Turkey {
+                position: absolute;
+                top: 33.4%;
+                left: 21.2%;
+                width: 9.2%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Irac {
+                position: absolute;
+                top: 37.27%;
+                left: 27.3%;
+                width: 5%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .OAE {
+                position: absolute;
+                top: 46.2%;
+                width: 2.8%;
+                left: 33.5%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Iordania {
+                position: absolute;
+                top: 40.6%;
+                left: 25.5%;
+                width: 2.3%;
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Eagypt {
+                position: absolute;
+                left: 20.6%;
+                top: 42%;
+                width: 5.4%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .China {
+                position: absolute;
+                left: 44%;
+                top: 24.29%;
+                width: 29.2%;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .ShriLanka {
+                position: absolute;
+                top: 60.5%;
+                left: 46.9%;
+                width: 1.3%;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .Malayzia {
+                position: absolute;
+                top: 62.5%;
+                left: 56.7%;
+                width: 9.3%;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .geography_item {
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+
+            // .mainImg {
+            //     // width: 100%;
+            // }
+
+            @include breakpoint($hb-bp) {
+                width: unset;
+                margin: 0;
+                .mainImg {
+                    width: 100%;
+                }
+
+            }
+
+            
+        }
+
+        
+
+        .countryes {
+            padding-left: 23rem;
+            padding-right: 23rem;
+            font-family: "NeoSansCyrRegular";
+
+            @include breakpoint($hb-bp) {
+                padding-left: 8rem;
+                padding-right: 8rem;
+            }
+
+            @include breakpoint($jb-bp) {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+
+            @include breakpoint($sm-bp) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            display: flex;
+            justify-content: space-between;
+
+            @include breakpoint($lg-bp) {
+                display: grid;
+                grid-template-rows: repeat(2, min-content);
+                grid-template-columns: repeat(5, 1fr);
+                grid-auto-flow: column;
+            }
+
+            @include breakpoint($mb-bp) {
+                display: grid;
+                grid-template-rows: repeat(3, min-content);
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-flow: column;
+                column-gap: 1rem;
+            }
+
+
+            @include breakpoint($sm-bp) {
+                grid-template-rows: repeat(5, min-content);
+            }
+
+
+
+            
+            
+
+            p {
+                font-size: 1.6rem;
+                    line-height: 3rem;
+                    color: #606060;
+                    transition: all 0.3s;
+            }
+
+            .countryNumber__active {
+                transition: all 0.3s;
+                color: #00372E;
+                // color: black;
+                font-family: "SourceSansPro";
+                font-size: 2rem;
+            }
+        }
+
+        
+    }
+
+    
+}
