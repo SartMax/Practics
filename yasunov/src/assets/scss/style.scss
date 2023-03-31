@@ -44,7 +44,7 @@ html {
 }
 
 body {
-
+  // overflow: hidden;
 }
 
 
@@ -65,6 +65,7 @@ svg {
 @import './blocks/header.scss';
 @import './blocks/swiper.scss';
 @import './blocks/industri.scss';
+@import './blocks/index.scss';
 @import './blocks/footer.scss';
 
 

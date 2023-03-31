@@ -11,11 +11,159 @@
             z-index: -3;
         }
     }
+    .content__first
+    {
+        position: relative;
+
+        .first__text
+        {
+            position: absolute;
+            bottom: 5.5rem;
+            left: 6rem;
+
+            h2
+            {
+                font-family: 'PT-Root';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 4.8rem;
+                line-height: 6.4rem;
+                color: #FFFFFF;
+                margin-bottom: 1.2rem;
+            }
+
+            p
+            {
+                font-family: 'PT-Root';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.55rem;
+                line-height: 3.2rem;
+                color: white;
+                width: 50rem;
+            }
+            button
+            {
+                margin-top: 3rem;
+                background: #2DC36A;
+                font-weight: 400;
+                font-size: 1.8rem;
+                width: 21.3rem;
+                height: 5.6rem;
+                text-align: center;
+                color: white;
+                gap: 0.5rem;
+                border-color: #2DC36A;
+                border-style: none;
+                border-radius: 0.8rem ;
+
+                @include breakpoint($lb-bp) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
     .content__second
     {
         display: flex;
         flex-direction: row;
         gap: 4.8rem;
+        
+        div{
+            position: relative;
+            .second__text
+            {
+                position: absolute;
+                bottom: 5.5rem;
+                left: 6rem;
+                h2
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 4.8rem;
+                    line-height: 6.4rem;
+                    color: #FFFFFF;
+                    margin-bottom: 1.2rem;
+                }
+
+                p
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.55rem;
+                    line-height: 3.2rem;
+                    color: white;
+                    width: 50rem;
+                }
+                button
+                {
+                    margin-top: 3rem;
+                    background: #2DC36A;
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    width: 21.3rem;
+                    height: 5.6rem;
+                    text-align: center;
+                    color: white;
+                    gap: 0.5rem;
+                    border-color: #2DC36A;
+                    border-style: none;
+                    border-radius: 0.8rem ;
+
+                    @include breakpoint($lb-bp) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .third__text
+            {
+                position: absolute;
+                bottom: 5.5rem;
+                left: 6rem;
+                h2
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 4.8rem;
+                    line-height: 6.4rem;
+                    color: #FFFFFF;
+                    margin-bottom: 1.2rem;
+                }
+
+                p
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.55rem;
+                    line-height: 3.2rem;
+                    color: white;
+                    width: 50rem;
+                }
+                button
+                {
+                    margin-top: 3rem;
+                    background: #2DC36A;
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    width: 21.3rem;
+                    height: 5.6rem;
+                    text-align: center;
+                    color: white;
+                    gap: 0.5rem;
+                    border-color: #2DC36A;
+                    border-style: none;
+                    border-radius: 0.8rem ;
+
+                    @include breakpoint($lb-bp) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
     }
 }
    

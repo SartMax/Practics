@@ -1,0 +1,197 @@
+main
+{
+    margin: 0 18.8rem 0 18.8rem;
+
+    .phone__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20rem;
+        div
+        {
+            h1
+            {
+                font-family: 'PT Serif';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 4rem;
+                line-height: 6.0rem;
+                color: #0E1E33;
+                margin-bottom: 1.5rem;
+                
+                span
+                {
+                    color: #2DC36A;
+                }
+            }
+            p
+            {
+                width: 43.5rem;
+                font-family: 'PT-Root';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.7rem;
+                line-height: 3.2rem;
+                color: #0E1E33;
+                margin-bottom: 3rem;
+            }
+            button {
+                background: #2DC36A;
+                font-weight: 400;
+                font-size: 1.8rem;
+                width: 14.8rem;
+                height: 4.8rem;
+                text-align: center;
+                color: white;
+                gap: 0.5rem;
+                border-color: #2DC36A;
+                border-style: none;
+                border-radius: 0.8rem ;
+
+                @include breakpoint($lb-bp) {
+                    font-size: 1.5rem;
+                }
+            }
+            img
+            {
+                width: 50rem;
+                height: 50rem;
+            }
+        }
+    }
+        h2
+        {
+            margin-top: 8.8rem;
+            margin-bottom: 4.8rem;
+            text-align: center;
+            font-family: 'PT Serif';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 5.6rem;
+            color: #0E1E33
+        }
+
+    .inspection
+    {
+        margin: 0 5.2rem 0 5.2rem;
+        display: grid; 
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        row-gap: 8.8rem;
+        column-gap: 4.8rem;
+        height: 100%;
+        div
+        {
+            img
+            {
+                width: 50rem;
+                height: 30rem;
+                border-radius: 4rem;
+            }
+            p:first-child
+            {
+                color: #2DC36A;
+                font-family: 'PT-Root';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+            h3
+            {
+                font-family: 'PT Serif';
+                font-style: normal;
+                width: 45.6rem;
+                font-weight: 700;
+                font-size: 3rem;
+                line-height: 4rem;
+                color: #0E1E33;
+                width: 35rem;
+            }
+            p
+            {
+                font-family: 'PT-Root';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 3.2rem;
+                color: #0E1E33;
+                width: 38rem;
+                margin-top: 1.6rem;
+            }
+        }
+        #item1 {
+            grid-row-start: 1;
+            grid-column-start: 1;
+         
+            grid-row-end: 2;
+            grid-column-end: 2;
+            
+         }
+         #item2 {
+            grid-row-start: 1;
+            grid-column-start: 2;
+         
+            grid-row-end: 2;
+            grid-column-end: 3;
+            
+         }
+         #item3 {
+            grid-row-start: 2;
+            grid-column-start: 1;
+         
+            grid-row-end: 3;
+            grid-column-end: 2;
+            
+         }
+         #item4 {
+            padding-left: 9.8rem;
+            grid-row-start: 2;
+            grid-column-start: 2;
+         
+            grid-row-end: 3;
+            grid-column-end: 3;
+            
+         }
+         #item5 {
+            grid-row-start: 3;
+            grid-column-start: 1;
+         
+            grid-row-end: 4;
+            grid-column-end: 2;
+            
+         }
+         #item6 {
+            grid-row-start: 3;
+            grid-column-start: 2;
+         
+            grid-row-end: 4;
+            grid-column-end: 3;
+            
+         }
+    }
+    span
+    {
+        color: #2DC36A;
+    }
+    .viewapp
+    {
+        display: flex;
+        gap: 4.8rem;
+        
+        div:first-child
+        {
+            width: 62rem;
+            height: 67rem;
+            background-color: #FFF5F5;
+        }
+        div:last-child
+        {
+            width: 62rem;
+            height: 67rem;
+            background-color: #F5FFF9;
+        }
+    }
+}
