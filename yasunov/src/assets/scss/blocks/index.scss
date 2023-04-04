@@ -59,11 +59,13 @@ main
             }
         }
     }
+    .text__page
+    {
         h2
         {
             margin-top: 8.8rem;
             margin-bottom: 4.8rem;
-            text-align: center;
+             text-align: center;
             font-family: 'PT Serif';
             font-style: normal;
             font-weight: 700;
@@ -71,7 +73,7 @@ main
             line-height: 5.6rem;
             color: #0E1E33
         }
-
+    }
     .inspection
     {
         margin: 0 23.8rem 0 23.8rem;
@@ -86,8 +88,8 @@ main
         {
             img
             {
-                width: 50rem;
-                height: 30rem;
+                width: 53rem;
+                height: 35rem;
                 border-radius: 4rem;
             }
             p:first-child
@@ -183,30 +185,80 @@ main
     .viewapp
     {
         display: flex;
-        justify-content: center;
         gap: 4.8rem;
+        justify-content: center;
         div
         {
-            height: 67rem;
+            padding-top: 4.8rem;
+            padding-left: 4.8rem;
+            span 
+            {
+                font-family: 'PT-Root';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                display: flex;
+                align-items: center;
+                color: #FF4E3D;
+                margin-bottom: 0.8rem;
+            }
+            .green   
+            {
+                font-family: 'PT-Root';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                display: flex;
+                align-items: center;
+                color: #2DC36A;
+            }
+            h3
+            {
+                font-family: 'PT Serif';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 3.2rem;
+                line-height: 4.2rem;
+                align-items: center;
+                color: #0E1E33;
+                margin-bottom: 2.4rem;
+            }
+
+            ul
+            {
+                li
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 2.4rem;
+                    line-height: 3rem;
+                    align-items: center;
+                    color: #0E1E33;
+                    margin-bottom: 1.6rem;
+                }
+                li::before
+                {
+                    content: url(../blocks/Vector.png);
+                }
+            }
+            
         }
         div:first-child
         {
-            width: 62rem;
-            height: 67rem;
-            background-color: #FFF5F5;
+            width: 33.5%;
+            height: 100%;
+            background: #FFF5F5 url(../scss/mask.png) no-repeat bottom right 20% / 45%;
             position: relative;
             border-radius: 4rem;
-            background-image: url(../scss/mask.png);
-            background-repeat: no-repeat;
-            background-position: bottom right 20%;
-            background-color: #FFF5F5;
-            background-size: 45%;
 
         }
         div:last-child
         {
-            width: 62rem;
-            height: 67rem;
+            width: 33.5%;
+            height: 100%;
             background-color: #F5FFF9;
             border-radius: 4rem;
         }
@@ -218,17 +270,215 @@ main
         display: flex;
         background: #F2F8FC;
         width: 100%;
+        // justify-content: space-around;
+        gap: 4.8rem;
+        margin-top: 5.6rem;
+        padding-left: 23.8rem;
+        padding-right: 18.8rem;
         .faster__case {
-
+            
             .faster_case__image {
-
+                margin: 4.8rem 0 3.2rem 0;
 
             }
             .faster_case__text {
-
-                
+                h3  
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 3.2rem;
+                    line-height: 4rem;
+                    color: #0E1E33;
+                    margin-bottom: 1.6rem;
+                }
+                p
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 400;
+                    width: 25.6rem;
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                    color: #0E1E33;
+                    margin-bottom: 4.8rem;
+                }
             }
         }
     }
-   
-}
+
+    .case_techology {
+        padding-left: 20.8rem;
+        padding-right: 20.8rem;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        .techology_struct {
+            text-align: center;
+            .struct__image {
+               img
+               {
+                width: 25rem;
+                height: 25rem;
+               }
+            }
+            .stuct_text {
+                h4
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 2.4rem;
+                    line-height: 3.2rem;
+                    text-align: center;
+                    color: #0E1E33;
+                    margin: 3.2rem 0 0.8rem 0;
+                }
+                p
+                {
+                    font-family: 'PT-Root';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    line-height: 3.2rem;
+                    color: #0E1E33
+                }
+            }
+        }
+
+    }
+    .case__partners {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        .partners__block {
+            padding: 6.4rem 4.8rem;
+            background: #FFFFFF;
+            border: 0.4rem solid #F2F8FC;
+            border-radius: 4rem;
+            text-align: center;
+            .partners_block__image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .form__back_conteiner {
+        display: flex;
+        justify-content: center;
+        margin-top: 8.8rem;
+        margin-bottom: 8.8rem;
+        background: url(path/to/image.jpg) no-repeat fixed center/cover;
+        border-radius: 4rem;
+        width: 71%;
+        padding: 1.5rem 10.2rem;
+        .form__conteiner {
+            display: flex;
+            flex: 1;
+            form
+            {
+                background: #FFFFFF;
+                border-radius: 2.5rem;
+                padding-left: 7.8rem;
+                padding-top: 7.8rem;
+                padding-bottom: 7.8rem;
+                .form__title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 4rem;
+                    line-height: 5.6rem;
+                    color: #0E1E33;
+                    width: 62%;
+                }
+                .form_conteiner_block {
+                    margin-top: 3.2rem;
+                    width: 64%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2.4rem;
+
+                    .cases-form__inpBlock
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        color: #0E1E33;
+                        width: 44%;
+                        
+                        input
+                        {
+                            background: #F6F6F6;
+                            border: 0.1rem solid rgba(0, 0, 0, 0.12);
+                            border-radius: 0.8rem;
+                            outline: none;
+                            height: 4.4rem;
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+                .form_conteiner__check {
+                    margin-top: 2.4rem;
+                    label
+                    {
+                        a
+                        {
+                            text-decoration: underline;
+                            color: #343338;
+                        }
+                    }
+                    .custom-checkbox {
+                        position: absolute;
+                        // z-index: -1;
+                        // opacity: 0;
+                        .grecaptcha-terms {
+                            a
+                            {
+                                text-decoration: underline;
+                                color: #343338;
+                            }
+
+                        }
+                    }
+                    .custom-checkbox::before
+                    {
+                        content: "";
+                        display: inline-block;
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #adb5bd;
+                        border-radius: 0.1rem;
+                        margin-right: 0.5em;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 50% 50%;
+                    }
+                }
+                }
+                .form_conteiner__button {
+                    button
+                    {
+                        background-color: #2DC36A;
+                        box-shadow: 0px 0.4rem 0.4rem rgba(50, 50, 71, 0.08),
+                                    0px 0.8rem 0.8rem rgba(50, 50, 71, 0.06);
+                        border-radius: 0.8rem;
+                        border: none;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        text-align: center;
+                        color: #FFFFFF;
+                        padding: 1.6rem 12rem;
+                        margin-top: 4rem;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
