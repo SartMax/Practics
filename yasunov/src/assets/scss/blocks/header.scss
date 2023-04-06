@@ -1,44 +1,37 @@
- .header {
+.header {
     display: flex;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 3.6rem;
-    padding-bottom: 3.6rem;
     justify-content: space-between;
     align-items: center;
+    padding: 3.6rem 4rem;
     // position: fixed;
     top: 0;
     width: 100%;
     z-index: 3;
+    .btn {
+        display: none;
+        .burgerico {
+            display: none;
+        }
 
+    }
     @include breakpoint($srm-bp) {
-        position: unset;
+      // width: 100%;
     }
-    
-
+  
     @include breakpoint($ssh-bp) {
-        justify-content: space-between;
+      justify-content: space-between;
     }
 
-    @include breakpoint($hb-bp) {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
+  
     @include breakpoint($sm-bp) {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        flex-direction: column;
-        gap: 1rem;
+      padding: 1rem;
+      flex-direction: column;
+      gap: 1rem;
     }
-
+  
     @include breakpoint($ll_bp) {
-        justify-content: space-around;
-        
+      justify-content: space-around;
     }
-
     .logoContainer {
 
         @include breakpoint($ssh-bp) {
@@ -139,8 +132,8 @@
                     border-style: none;
                     border-radius: 0.8rem ;
 
-                    @include breakpoint($lb-bp) {
-                        font-size: 1.5rem;
+                    @include breakpoint($xl-bp) {
+                        display: none;
                     }
                 }
 
@@ -170,6 +163,17 @@
                     }
                 }
 
-            }  
+
+        }  
+    }
+    .menuBtn {
+        display: none;
+        svg
+        {
+            width: 10rem;
+        }
+        @include breakpoint($xl-bp) {
+            display: block;
+        }
     }
 }

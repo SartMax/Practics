@@ -9,12 +9,21 @@
     background: #0E1E33;
     width: 100%;
 
+    @include breakpoint($xl_bp) {
+        overflow: hidden;
+      }
+
     .footer__container
     {
         display: flex;
         flex-direction: row;
         gap: 11.4rem;
         align-items: baseline;
+
+        @include breakpoint($xl_bp) {
+            gap: 5rem;
+          }
+
         div{
             display: flex;
             flex-direction: column;
@@ -72,11 +81,18 @@
         height: 0.1rem;
         background: #FFFFFF;
         border-radius: 4px;
+
+        @include breakpoint($xl_bp) {
+            width: 93rem;
+          }
     }
     .footer__end
     {
         display: flex;
         gap: 39rem;
+        @include breakpoint($xl_bp) {
+            gap: 15rem;
+          }
         p
         {
             font-family: 'PT-Root';
